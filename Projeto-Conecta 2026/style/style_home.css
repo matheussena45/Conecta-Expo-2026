@@ -34,6 +34,14 @@ img {
 
 /* botões em cima da imagem */
 
+main>h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+main>p {
+    text-align: center;
+}
 
 a {
     position: absolute;
