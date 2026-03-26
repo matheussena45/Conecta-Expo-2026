@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Bebas Neue', sans-serif;
+    background: black;
 }
 
 img {
@@ -81,14 +82,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
     padding: 10px;
+}
+
+header>h1 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
 }
 
 header>a {
     border-radius: 5px;
     border: 1px solid orange;
-    color: black;
+    color: white;
 }
 
 .container {
