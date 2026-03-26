@@ -88,6 +88,7 @@ header {
 header>a {
     border-radius: 5px;
     border: 1px solid orange;
+    color: black;
 }
 
 .container {
