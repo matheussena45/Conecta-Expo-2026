@@ -5,4 +5,103 @@
     padding: 0px;
 }
 
-:root {}
+:root {
+    --green: #00ff41;
+    --orange: #ff6b00;
+    --pink: #ff006e;
+    --dark: #0a0a0f;
+    --dark2: #111118;
+    --dark3: #3e3e4d;
+    --text: #e8e8f0;
+    --text-dim: #888899;
+    --rover: #ff6a007a;
+    --paid: #08912ab2;
+    --free: #00ff4070;
+    --timer: #ff6b00;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #00ff402c;
+}
+
+header>h1 {
+    color: white;
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    padding: 20px;
+}
+
+header>a {
+    font-size: 1.4em;
+}
+
+.btn_back {
+    border-radius: 5px;
+    border: 1px solid #ff6b00;
+    color: white;
+    padding: 8px 25px;
+    width: 50px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header>a:hover {
+    background-color: #ff6b00;
+}
+
+.green {
+    color: #00ff41;
+}
+
+.orange {
+    color: #ff6b00;
+}
+
+main>h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 15px;
+    letter-spacing: 3px;
+}
+
+main>p {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 6px 0px 15px 0px;
+    letter-spacing: 3px;
+    color: #888899;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+footer {
+    font-size: 0.7em;
+    padding: 15px;
+    text-align: center;
+    color: var(--text-dim);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+footer>a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #a5a5af;
+    transition: 0.5s;
+}
+
+footer>a:hover {
+    color: white;
+}

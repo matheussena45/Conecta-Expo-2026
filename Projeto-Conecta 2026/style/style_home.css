@@ -123,6 +123,17 @@ header>a {
     transition: 0.5s;
 }
 
+.erro {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid #e74c3c;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: none; /* começa escondido */
+    text-align: center;
+}
+
 #btnEntrar:hover {
     background-color: var(--free);
 }
@@ -132,7 +143,7 @@ header>a {
 }
 
 button:hover {
-    background-color: var(--rover);
+    background-color: var(--orange);
 }
 
 .green {
