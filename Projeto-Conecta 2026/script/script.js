@@ -19,7 +19,7 @@ btnEntrar.onclick = () => {
     const senha = document.getElementById("senha").value;
 
     const userCorreto = "admin";
-    const senhaCorreta = "1234";
+    const senhaCorreta = "#SebraeExpo30";
 
     if (usuario === userCorreto && senha === senhaCorreta) {
         window.location.href = "admin.html";

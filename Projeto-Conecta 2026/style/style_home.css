@@ -5,7 +5,20 @@
     padding: 0px;
 }
 
-:root {}
+:root {
+    --green: #00ff41;
+    --orange: #ff6b00;
+    --pink: #ff006e;
+    --dark: #0a0a0f;
+    --dark2: #111118;
+    --dark3: #3e3e4d;
+    --text: #e8e8f0;
+    --text-dim: #888899;
+    --reserved: #ff6a007a;
+    --paid: #08912ab2;
+    --free: #00ff4070;
+    --timer: #ff6b00;
+}
 
 body {
     font-family: 'Bebas Neue', sans-serif;
@@ -66,22 +79,15 @@ header>a {
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-
+    letter-spacing: 3px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: var(--dark3);
 
     position: relative;
 }
 
-/* botão de fechar (X) */
-#fecharAdm {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 22px;
-    cursor: pointer;
-}
 
 /* inputs */
 .popup-content input {
@@ -91,30 +97,45 @@ header>a {
 }
 
 /* botão entrar */
-.popup-content button {
+#btnEntrar {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #2ecc71;
+    background: var(--green);
     color: white;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.popup-content button:hover {
-    background: #27ae60;
+#fecharAdm {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btnEntrar:hover {
+    background-color: var(--free);
+}
+
+#fecharAdm:hover {
+    background-color: var(--reserved);
 }
 
 button:hover {
-    background-color: #ff6b00;
+    background-color: var(--orange);
 }
 
 .green {
-    color: #00ff41;
+    color: var(--green);
 }
 
 .orange {
-    color: #ff6b00;
+    color: var(--orange);
 }
 
 main>h1 {
@@ -129,7 +150,7 @@ main>p {
     font-size: 0.8em;
     padding: 6px 0px 15px 0px;
     letter-spacing: 3px;
-    color: #888899;
+    color: var(--text-dim);
     font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -166,11 +187,11 @@ img {
 }
 
 .btn_externa {
-    border: 1px solid #00ff41;
+    border: 1px solid var(--free);
 }
 
 .btn_interna {
-    border: 1px solid #ff6b00;
+    border: 1px solid var(--reserved);
 }
 
 .btn_externa:hover {
@@ -185,7 +206,7 @@ footer {
     font-size: 1em;
     padding: 15px;
     text-align: center;
-    color: #888899;
+    color: var(--text-dim);
 }
 
 footer>a {
