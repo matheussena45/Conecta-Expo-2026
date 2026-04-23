@@ -14,7 +14,7 @@
     --dark3: #3e3e4d;
     --text: #e8e8f0;
     --text-dim: #888899;
-    --reserved: #ff6a007a;
+    --rover: #ff6a007a;
     --paid: #08912ab2;
     --free: #00ff4070;
     --timer: #ff6b00;
@@ -40,15 +40,19 @@ header>h1 {
     padding: 20px;
 }
 
+header>span {
+    padding: -5px;
+}
+
 header>a {
     font-size: 1.4em;
 }
 
 .btn {
     border-radius: 5px;
-    border: 1px solid #ff6b00;
+    border: 1px solid var(--orange);
     color: white;
-    padding: 8px 16px;
+    padding: 8px 30px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -56,6 +60,7 @@ header>a {
     background: transparent;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1em;
+    letter-spacing: 2px;
 }
 
 .popup {
@@ -118,12 +123,23 @@ header>a {
     transition: 0.5s;
 }
 
+.erro {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid #e74c3c;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: none; /* começa escondido */
+    text-align: center;
+}
+
 #btnEntrar:hover {
     background-color: var(--free);
 }
 
 #fecharAdm:hover {
-    background-color: var(--reserved);
+    background-color: var(--rover);
 }
 
 button:hover {
@@ -139,6 +155,7 @@ button:hover {
 }
 
 main>h1 {
+    color: white;
     text-align: center;
     font-size: 2.5em;
     padding-top: 15px;
@@ -186,12 +203,15 @@ img {
     transition: 0.5s;
 }
 
+
 .btn_externa {
     border: 1px solid var(--free);
+    width: 200px;
 }
 
 .btn_interna {
-    border: 1px solid var(--reserved);
+    border: 1px solid var(--rover);
+    width: 200px;
 }
 
 .btn_externa:hover {
@@ -199,14 +219,15 @@ img {
 }
 
 .btn_interna:hover {
-    background-color: #ff6a0056;
+    background-color: var(--rover);
 }
 
 footer {
-    font-size: 1em;
+    font-size: 0.7em;
     padding: 15px;
     text-align: center;
     color: var(--text-dim);
+    font-family: 'Segoe UI', sans-serif;
 }
 
 footer>a {
