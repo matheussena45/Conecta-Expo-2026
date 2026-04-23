@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style_inside.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow:wght@400;500;600;700;900&amp;family=Barlow+Condensed:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow:wght@400;500;600;700;900&amp;family=Barlow+Condensed:wght@300;400;700&amp;display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Stands Internos</title>
 </head>
+
 <body>
     <header>
-        <a class="btn" href="../pages/home.html" >Voltar</a>
+        <a class="btn" href="../pages/home.html">Voltar</a>
         <h1>
             <span class="green">Conecta</span>
             <span class="orange">2026</span>
@@ -29,6 +34,41 @@
 
     </div>
 
+    <div class="space-reserve">
+        <h2>Escolha o stand</h2>
+
+        <select id="stand">
+            <option value="">Selecione um stand</option>
+            <option value="A1">Stand A1</option>
+            <option value="A2">Stand A2</option>
+            <option value="A3">Stand A3</option>
+        </select>
+
+        <button onclick="abrirModal()">Reservar</button>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal()">×</span>
+
+            <h2>Reservar Stand</h2>
+            <p id="standSelecionado"></p>
+
+            <form>
+                <input type="text" placeholder="Nome completo" required>
+                <input type="text" placeholder="Empresa (opcional)">
+                <input type="email" placeholder="E-mail" required>
+                <input type="text" placeholder="Telefone / WhatsApp" required>
+
+                <button type="submit">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
+
+
     <footer> Feito por<a href="#"> Matheus Sena &copy;</a></footer>
+    <script src="../script/script.js"></script>
 </body>
+
 </html>

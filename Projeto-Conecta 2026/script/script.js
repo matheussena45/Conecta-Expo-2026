@@ -27,3 +27,20 @@ btnEntrar.onclick = () => {
         alert("Usuário ou senha incorretos!");
     }
 };
+
+
+function abrirModal() {
+  const stand = document.getElementById("stand").value;
+
+  if (!stand) {
+    alert("Selecione um stand!");
+    return;
+  }
+
+  document.getElementById("standSelecionado").innerText = `Stand: ${stand}`;
+  document.getElementById("modal").style.display = "flex";
+}
+
+function fecharModal() {
+  document.getElementById("modal").style.display = "none";
+}
